@@ -15,7 +15,7 @@ public class Service {
 
     public List<Integer> removeDuplicates(){
         return integers.stream()
-                .filter(n -> n != n)
+                .filter(n -> n != n*2)
                 .collect(Collectors.toList());
     }
 
